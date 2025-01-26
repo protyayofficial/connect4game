@@ -5,7 +5,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: './index.html', // Use index.html as the entry point
+      input: {
+        main: 'frontend/index.html', // Replace with your entry file (e.g., index.js)
+      },
     },
   },
 });
